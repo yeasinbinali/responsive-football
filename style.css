@@ -1,0 +1,50 @@
+/* ------------------
+    font style 
+--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* common styes */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* -----------------
+header style start
+------------------- */
+.main-header{
+    background-color: #2D25A0;
+    height: 650px;
+}
+.first-area{
+    display: flex;
+    justify-content: center;
+}
+.half-width{
+    width: 50%;
+}
+.header-name{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 64px;
+    margin-left: 156px;
+    margin-top: 160px;
+}
+.half-width a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 156px;
+    border: 5px 10px solid;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: font-size 1s;
+}
+a:hover{
+    font-size: 150%;
+}
+.half-width img{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 153px;
+}
+/* -------------------
+header style end
+--------------------*/
