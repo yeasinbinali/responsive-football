@@ -48,3 +48,40 @@ a:hover{
 /* -------------------
 header style end
 --------------------*/
+/* ------------------
+blog style start
+-------------------- */
+.container{
+    width: 76%;
+    margin-top: 43px;
+    margin-left: 180px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.blog{
+    border: 2px solid white;
+    background-color: white;
+    width: 77%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 27px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.thumbnail img{
+    width: 259px;
+    height: 180px;
+    border-radius: 5px;
+    margin-bottom: 8px
+}
+.blog-title{
+    margin: 0;
+}
+.blog-detail{
+    text-align:inherit;
+    font-weight: 100;
+}
+/* -----------------------
+blog style end
+------------------------ */
