@@ -21,7 +21,6 @@ header style start
 }
 .first-area{
     display: flex;
-    justify-content: center;
 }
 .half-width{
     width: 50%;
@@ -189,3 +188,9 @@ footer end
 meadia queries
 -------------------------- */
 /* mobile devices */
+
+
+
+
+
+

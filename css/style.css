@@ -1,0 +1,452 @@
+/*================= Reset and Reusable Style ================ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+::selection {
+    background-color: #2d25a0;
+    color: #FFFFFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    padding: 5px 20px;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: #e02c6d;
+    display: inline-block;
+    padding: 10px 24px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background: rgba(0, 0, 0, 0.6);
+    border: 3px solid #6d0c30;
+    transform: scale(1.3);
+    transition: all .7s;
+}
+.section-title h2{
+    text-align: center;
+    font-size: 42px;
+}
+
+/* Keyframe */
+@keyframes banner-animation {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.4) rotate(30deg);
+    }
+}
+
+/*======================== Header Style ============================ */
+.header-section{
+    background: #4a69bd;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.navigation ul li:first-child{
+    padding-left: 0;
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-area , .img-area{
+    width: 50%;
+}
+.main-title h1{
+    margin-top: 110px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+.img-area img{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    animation: banner-animation 5s linear infinite;;
+}
+
+/*======================== Article Section Style ============================ */
+.articles-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin: 70px 0;
+}
+.player-card{
+    padding: 25px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);   
+}
+.article-title h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+.article-excerpt p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C
+}
+.feature-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.feature-image img:hover{
+    transform: scale(1.1);
+    transition: all 2.5s;
+    cursor: pointer;
+}
+
+/* ====================Top News Section Style================== */
+.top-news{
+    background: #4a69bd;
+    padding: 50px 0;
+}
+.top-news-title h2{
+    color: #FFFFFF;
+}
+.articles-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article.news{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+article.news-02{
+    flex-direction: row-reverse;
+}
+.news-02 .news-info{
+    margin-right: -60px;
+    margin-left: 0;
+}
+.news-feature-image {
+    width: 60%;
+}
+.news-info{
+    width: 40%;
+    overflow: hidden;
+}
+.news-info{
+    background: #FFFFFF;
+    padding: 20px;
+    margin-left: -60px;
+    z-index: 5;
+}
+.news-title a, .read-more a{
+    color: #4a69bd;
+}
+.news-feature-image img{
+    width: 100%;
+}
+
+/* ====================Top Players Section Start================== */
+.top-players{
+    padding: 80px 0;
+    padding-bottom: 120px;
+}
+.top-players-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.player{
+    width: 30%;
+    margin-bottom: 30px;
+    position: relative;
+    transition: 3s ease-in-out;
+}
+.player .player-img img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.player:hover .player-img img{
+    transform: scale(1.1);
+    transition: all 1.5s;
+}
+.player:hover .player-details{
+    display: block;
+    cursor: pointer;
+    transition: all 1.5s;
+    
+}
+.player-details{
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    color: #FFFFFF;
+    transition: 3s ease-in-out;
+}
+.player-contribution{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.player-name h2, 
+.player-position h3 ,
+.appearances h2, 
+.appearances h3, 
+.goals h2, 
+.goals h3, 
+.assists h2, 
+.assists h3 {
+    text-align: center;
+}
+/*======================== Highlights Section Style ============================ */
+.highlight-section{
+    padding: 80px 0;
+    background: #4a69bd;
+}
+.highlights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.highlights-content {
+    width: 40%;
+}
+.highlights-img{
+    width: 55%;
+}
+.highlights-title h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.highlights-details p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ddd;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.highlights-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.highlights-img img:hover{
+    transform: scale(1.2);
+    transition: all 2.5s;
+    cursor: pointer;
+}
+
+/* ================= Footer Style ================ */
+.footer-section{
+    padding: 60px 0;
+}
+.social-icons ul li{
+    padding: 8px;
+}
+.social-icons ul li a i{
+    color: #969BAB;
+    display: inline-block;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid #969BAB;
+    padding: 10px;
+}
+.footer-widget{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-widget .logo-area img{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* -----------------------------
+        Media Query
+-------------------------------- */
+
+/* For Tablet Device */
+@media only screen and (max-width:867px){
+    .navigation{
+        display: none;
+    }
+    .container{
+        width: 85%;
+    }
+    .section-title h2{
+        font-size: 28px;
+    }
+    .main-content{
+        flex-direction: column-reverse;
+    }
+    .main-title h1{
+        font-size: 36px;
+        margin-top: 0px;
+    }
+    .content-area , .img-area{
+        width: 100%;
+    }
+    .img-area img{
+        margin-bottom: 10px;
+    }
+    .content-area{
+        margin-bottom: 20px;
+    }
+    .articles-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .article-title h1{
+        font-size: 20px;
+    }
+    .article-excerpt p{
+        font-size: 16px;
+    }
+    .news-feature-image , .news-info{
+        width: 45%;
+    }
+    .news-info {
+        margin: 0 5%;
+        padding: o;
+    }
+    .news-02 .news-info{
+        margin: 0;
+    }
+    .news-title h2{
+        font-size: 18px;
+    }
+    .news-excerpt p{
+        font-size: 14px;
+    }
+    .player{
+        width: 47%;
+    }
+    .highlights{
+        flex-direction: column;
+    }
+    .highlights-content , .highlights-img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+@media only screen and (max-width: 520px){
+    .navigation{
+        display: none;
+    }
+    .container{
+        width: 85%;
+    }
+    .section-title h2{
+        font-size: 24px;
+    }
+    .main-content{
+        flex-direction: column-reverse;
+    }
+    .main-title h1{
+        font-size: 32px;
+        margin-top: 0px;
+    }
+    .content-area , .img-area{
+        width: 100%;
+    }
+    .img-area img{
+        margin-bottom: 10px;
+    }
+    .content-area{
+        margin-bottom: 20px;
+    }
+    .articles-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .article-title h1{
+        font-size: 18px;
+    }
+    .article-excerpt p{
+        font-size: 14px;
+    }
+    article.news{
+        flex-direction: column;
+    }
+    .news-feature-image , .news-info{
+        width: 90%;
+    }
+    .news-info {
+        margin: 0 5%;
+        padding: o;
+    }
+    .news-02 .news-info{
+        margin: 0;
+    }
+    .news-title h2{
+        font-size: 18px;
+    }
+    .news-excerpt p{
+        font-size: 14px;
+    }
+    .top-players-container{
+        flex-direction: column;
+    }
+    .player{
+        width: 100%;
+    }
+    .highlights{
+        flex-direction: column;
+    }
+    .highlights-title h2{
+        font-size: 24px;
+    }
+    .highlights-details p{
+        font-size: 14px;
+    }
+    .highlights-content , .highlights-img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
