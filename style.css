@@ -88,7 +88,7 @@ blog style end
 /* -----------------------
 news style start
 ------------------------ */
-.news{
+.section-name{
     color: #2D25A0;
     font-size:35px;
 }
@@ -104,10 +104,10 @@ news style start
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 }
-.news-title{
+.headline{
     margin: 0%;
 }
-.news-title{
+.headline{
     margin-bottom: 10px;
 }
 .news-info a{
@@ -122,3 +122,20 @@ news style end
 /* -------------------
 top goal scorer style start
 ---------------------- */
+.table-container{
+    margin-top: 43px;
+    margin-left: 180px;
+}
+.top-goal-scorer{
+    width: 84%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 3px solid grey;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
