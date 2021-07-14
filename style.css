@@ -8,6 +8,7 @@
     color: #FFFFFF;
 }
 body{
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: ivory;
 }
@@ -184,3 +185,7 @@ footer start
 /* --------------------------
 footer end
 ---------------------------*/
+/* ------------------------
+meadia queries
+-------------------------- */
+/* mobile devices */
